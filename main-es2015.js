@@ -203,14 +203,21 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
 /*!*****************************************************!*\
   !*** ./src/app/shared/constants/GeneralConstant.ts ***!
   \*****************************************************/
-/*! exports provided: GeneralConstant */
+/*! exports provided: GeneralConstant, IMAGEURLS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneralConstant", function() { return GeneralConstant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IMAGEURLS", function() { return IMAGEURLS; });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../environments/environment */ "./src/environments/environment.ts");
+
 const GeneralConstant = {
     LOCALSTORAGE_TOKEN: 'token'
+};
+const IMAGEURLS = {
+    LOGO: _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseHref + '/assets/images/logo.png',
+    AVATAR: _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseHref + '/assets/images/img_avatar.png'
 };
 
 
@@ -428,6 +435,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     production: false,
     api: 'http://localhost:8080/api',
+    baseHref: 'https://itarprishtine.github.io/akropoli-pr-ui'
 };
 /*
  * For easier debugging in development mode, you can import the following file

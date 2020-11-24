@@ -370,7 +370,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/shared/constants/GeneralConstant.ts ***!
     \*****************************************************/
 
-  /*! exports provided: GeneralConstant */
+  /*! exports provided: GeneralConstant, IMAGEURLS */
 
   /***/
   function srcAppSharedConstantsGeneralConstantTs(module, __webpack_exports__, __webpack_require__) {
@@ -383,9 +383,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     __webpack_require__.d(__webpack_exports__, "GeneralConstant", function () {
       return GeneralConstant;
     });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "IMAGEURLS", function () {
+      return IMAGEURLS;
+    });
+    /* harmony import */
+
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ../../../environments/environment */
+    "./src/environments/environment.ts");
 
     var GeneralConstant = {
       LOCALSTORAGE_TOKEN: 'token'
+    };
+    var IMAGEURLS = {
+      LOGO: _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseHref + '/assets/images/logo.png',
+      AVATAR: _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].baseHref + '/assets/images/img_avatar.png'
     };
     /***/
   },
@@ -815,7 +831,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false,
-      api: 'http://localhost:8080/api'
+      api: 'http://localhost:8080/api',
+      baseHref: 'https://itarprishtine.github.io/akropoli-pr-ui'
     };
     /*
      * For easier debugging in development mode, you can import the following file
